@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bitcoin_logo"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/signInNow"
+        style="@style/signInText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_28"
+        android:text="@string/signInNow"
+        android:textColor="@color/back_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/signInName"
+        style="@style/inputText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_48"
+        android:background="@drawable/text_style"
+        android:drawableStart="@drawable/ic_baseline_person_24"
+        android:hint="@string/signInName"
+        android:inputType="textPersonName"
+        android:minHeight="@dimen/dimen_48"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signInNow" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editTextPassword"
+        style="@style/inputText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:background="@drawable/text_style"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:drawableEnd="@drawable/ic_baseline_remove_red_eye_24"
+        android:hint="@string/passwordHint"
+        android:inputType="textPassword"
+        android:minHeight="@dimen/dimen_48"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signInName" />
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/rememberCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/remember_me"
+        android:textColor="@color/grey_font"
+        android:textSize="@dimen/dimen_15"
+        app:layout_constraintStart_toStartOf="@id/editTextPassword"
+        app:layout_constraintTop_toBottomOf="@id/editTextPassword" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/ForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forgot_password"
+        android:textColor="@color/grey_font"
+        android:textSize="@dimen/dimen_15"
+        app:layout_constraintEnd_toEndOf="@id/editTextPassword"
+        app:layout_constraintTop_toTopOf="@id/rememberCheckBox"
+        app:layout_constraintBottom_toBottomOf="@id/rememberCheckBox"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signInButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_15"
+        android:layout_marginTop="@dimen/dimen_50"
+        android:layout_marginEnd="@dimen/dimen_15"
+        android:background="@drawable/sign_in_button_style"
+        android:text="@string/signInButton"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimenSp_20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextPassword" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/account_exist"
+        style="@style/secondText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_5"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:layout_marginEnd="@dimen/dimen_5"
+        android:gravity="center_horizontal"
+        android:text="@string/accountText"
+        android:textColor="@color/grey_font"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signInButton" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/signUpHere"
+        style="@style/signInText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up_from_here"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/account_exist"
+        android:layout_marginBottom="@dimen/dimen_40"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

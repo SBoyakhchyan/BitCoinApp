@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">BitCoinApp</string>
+    <string name="background_image">background_image</string>
+    <string name="welcome_to_btc_exchange">Welcome to BTC Exchange</string>
+    <string name="text_before_welcome">We are offering digital asset exchange with maximum security and advanced trading features.</string>
+    <string name="sign_up_button">SIGN UP</string>
+    <string name="membership">Already a member?</string>
+    <string name="signIn">Sign in</string>
+    <string name="signInNow">Sign In Now</string>
+    <string name="signInName">Name</string>
+    <string name="remember_me">Remember me</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="signInButton">SIGN IN</string>
+    <string name="passwordHint">Password</string>
+    <string name="accountText">Don`t You have an account?</string>
+    <string name="sign_up_from_here">Sign Up from here</string>
+    <string name="create_account">Create Account</string>
+    <string name="SignUpName">Name</string>
+    <string name="enterEmail">enterEmail</string>
+    <string name="password">Password</string>
+    <string name="repeat_password">Repeat password</string>
+    <string name="agreementCheckBox">I agree to the</string>
+    <string name="terms_and_conditions">Terms and Conditions</string>
+    <string name="_button">Sign Up</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="sign_in_from_here">Sign In from here</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
